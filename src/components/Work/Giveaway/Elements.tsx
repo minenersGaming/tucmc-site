@@ -126,15 +126,18 @@ export const MapImage = ({ img }: { img: MapImageType }) => {
         <Image
           className="top-0 object-cover object-top"
           layout="fill"
-          src={img.find((i) => i.type === "JPEG")?.path ?? ""}
-          alt={img.find((i) => i.type === "JPEG")?.name ?? ""}
+          src={img.find((i) => i.type === "JPEG_Map of Triamudom Suksa School")?.path ?? ""}
+          alt={img.find((i) => i.type === "JPEG_Map of Triamudom Suksa School")?.name ?? ""}
         />
       </div>
 
       <div className="absolute bottom-0 grid w-full grid-cols-2">
         <button
           onClick={() => {
-            downloadFile(`${img.find((i) => i.type === "PDF")?.path}`, `${img.find((i) => i.type === "PDF")?.name}`)
+            downloadFile(
+              `${img.find((i) => i.type === "PDF_Map of Triamudom Suksa School")?.path}`,
+              `${img.find((i) => i.type === "PDF_Map of Triamudom Suksa School")?.name}`
+            )
           }}
           className="flex w-full flex-col items-center justify-center gap-1 rounded-bl-md border-r border-gray-300 bg-gray-500 bg-opacity-60 py-3 px-4 text-center text-white backdrop-blur-md transition-all hover:brightness-110"
         >
@@ -147,7 +150,10 @@ export const MapImage = ({ img }: { img: MapImageType }) => {
         </button>
         <button
           onClick={() => {
-            downloadFile(`${img.find((i) => i.type === "JPEG")?.path}`, `${img.find((i) => i.type === "JPEG")?.name}`)
+            downloadFile(
+              `${img.find((i) => i.type === "JPEG_Map of Triamudom Suksa School")?.path}`,
+              `${img.find((i) => i.type === "JPEG_Map of Triamudom Suksa School")?.name}`
+            )
           }}
           className="flex w-full flex-col items-center justify-center gap-1  rounded-br-md bg-gray-500 bg-opacity-60 py-6 px-4 text-center text-white backdrop-blur-md transition-all hover:brightness-110"
         >
